@@ -45,3 +45,12 @@ v.emplace_back(33); // similar as push_back
 cout<<v[0] << ", " << v[1] << endl; // prints - 1, 33
 ```
 
+-> We can also declare a vector of pair data type <br />
+```C++
+vector<pair<int , int>> vp;
+vp.push_back({3,2});
+vp.push_back(8,9); // This statement will generate an error (you can do the same using emplace_back)
+vp.emplace_back(5,6); 
+cout << vp[0].first << " " << vp[0].second << endl; // prints - 3 , 2
+```
+
