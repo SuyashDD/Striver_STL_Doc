@@ -5,7 +5,6 @@ C++ STL is divided in 4 parts -
 4. Iterators
 
 ---
----
 ## **PAIR**
 
 -> Pair resides in unitily library <br />
@@ -47,6 +46,7 @@ cout<<v[0] << ", " << v[1] << endl; // prints - 1, 33
 ```
 
 -> We can also declare a vector of pair data type
+
 ```C++
 vector<pair<int , int>> vp;
 vp.push_back({3,2});
