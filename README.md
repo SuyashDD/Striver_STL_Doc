@@ -55,3 +55,22 @@ vp.emplace_back(5,6);
 cout << vp[0].first << " " << vp[0].second << endl; // prints - 3 , 2
 ```
 
+-> We can declare a vector will it's fields/values already filled
+** format :  vector<datatype> {size , value} **
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
