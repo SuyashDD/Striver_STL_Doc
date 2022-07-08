@@ -98,6 +98,19 @@ cout << *(--v.end()); // prints 50
 v.back() //-> It is a function which will return the last element of vector i.e. prints 50
 ```
 
+-> Methods to loop through vector:
+``` c++
+vector<int> v(5) = {1,2,3,4,5};
+
+for(vector<int>::iterator it = v.begin() ; it != v.end(); it++)
+    cout << *it << " ";
+
+for(auto it = v.begin() ; it != v.end() ; it++)
+    cout << *it << " ";
+    
+for(auto a : v)
+    cout << a << " "; // here a is not an address holder instead it will direct give you values in the vector
+```
 
 
 
