@@ -6,8 +6,11 @@ C++ STL is divided in 4 parts -
 
 ---
 ### **Pair**
+
 -> Pair resides in unitily library
+
 -> You can declare pair of any datatype
+
 e.g. 
 
 ``` c++
