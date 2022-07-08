@@ -95,7 +95,7 @@ v.end() //-> points to the address after 50. Hence if we need to access 50 then 
 cout << *(v.end()); // prints either 0 or garbage value
 cout << *(--v.end()); // prints 50
 
-v.back() //-> It is a ==function== which will return the last element of vector i.e. prints 50
+v.back() //-> It is a **function** which will return the last element of vector i.e. prints 50
 ```
 
 
