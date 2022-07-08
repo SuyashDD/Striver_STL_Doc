@@ -32,3 +32,16 @@ cout << p.first << " " << p.second; // access values
 pair<char , char> arr[] = { {'a' , 'b'} , {'p' , 'q'} , {'s' , 'w'}};
 cout << arr[1].second; // prints 'q'
 ```
+
+## **VECTOR**
+
+-> Dynamic array i.e. size is flexible
+
+``` C++
+vector<int> v; // creates an empty container
+v.push_back(1); // adds 1 in v
+v.emplace_back(33); // similar as push_back
+// emplace_back is faster and dynamically increases the vector size
+cout<<v[0] << ", " << v[1] << endl; // prints - 1, 33
+```
+
