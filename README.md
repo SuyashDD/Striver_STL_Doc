@@ -65,7 +65,8 @@ e.g. vector<int> {5 , 100} // -> This will create a vector of size 5 filled with
 
 e.g. vector<int> {5} // This will create a vector of size 5 field with either 0 or garbage values depending on the compiler
 ``` 
-==Note==
+
+### Note
 ``` C++
 vector<int> v(5); // This will create - {0, 0, 0, 0 ,0}
 v.push_back(9); // So vector will be - {0, 0, 0, 0, 0, 9};
