@@ -5,7 +5,7 @@ C++ STL is divided in 4 parts -
 4. Iterators
 
 ---
-## **Pair**
+## **PAIR**
 
 -> Pair resides in unitily library <br />
 -> You can declare pair of any datatype <br />
