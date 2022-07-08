@@ -126,7 +126,42 @@ v.erase(v.begin() + 1 , v.begin() + 4 );
 // Means {20, 30, 40} will be deleted.
 // v will be = {10, 50, 60, 70, 80, 90}
 ```
+-> Insert at Vector
+``` C++
+vector<int> (2 , 50); // {50, 50}
 
+//v = {10, 20, 30, 40}
+v.insert(v.begin() , 55); //  will insert at begin {55, 10, 20, 30, 40}
+v.insert(v.begin() + 1 , 33); // {55, 33, 10, 20, 30, 40}
+v.insert(v.begin() + 2 , 5 , 77) // This will insert 5 instances of 77 from position 2 -> {55, 33, 77, 77, 77, 77, 77, 10, 20, 30, 40} 
+
+// v = {10, 20, 30, 40}
+vector<int> vcopy(2, 11); // vcopy = {11, 11}
+vcopy.insert(vcopy.begin() + 1 , v.begin() , v.end()); // insert elements/vector in vcopy from start index 1 and insert elements in v from v.begin() till v.end()
+// Output : 
+// v = {10, 20, 30, 40}
+// vcopy = {11, 10, 20, 30, 40, 11}
+```
+
+-> Others 
+``` c++
+v = {1,2,3,4};
+
+v.size(); // 4
+
+v.pop_back() // deletes last element i.e. 4
+
+v.empty() // return true if vector is empty
+
+v.clear() // clears the entire vector i.e. makes it empty
+
+v1 = {1 , 2};
+v2 = {4 , 5};
+v1.swap(v2); // This will swap v1 with v2
+// O/P : 
+v1 = {4 , 5};
+v2 = {1, 2};
+```
 
 
 
