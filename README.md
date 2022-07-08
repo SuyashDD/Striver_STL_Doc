@@ -32,7 +32,7 @@ cout << p.first << " " << p.second; // access values
 pair<char , char> arr[] = { {'a' , 'b'} , {'p' , 'q'} , {'s' , 'w'}};
 cout << arr[1].second; // prints 'q'
 ```
-
+---
 ## **VECTOR**
 
 -> Dynamic array i.e. size is flexible
@@ -45,7 +45,7 @@ v.emplace_back(33); // similar as push_back
 cout<<v[0] << ", " << v[1] << endl; // prints - 1, 33
 ```
 
--> We can also declare a vector of pair data type <br />
+-> We can also declare a vector of pair data type
 ```C++
 vector<pair<int , int>> vp;
 vp.push_back({3,2});
