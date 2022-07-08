@@ -56,11 +56,16 @@ cout << vp[0].first << " " << vp[0].second << endl; // prints - 3 , 2
 ```
 
 -> We can declare a vector will it's fields/values already filled <br />
-**format** : 
+
+**Format** : 
 ``` c++
 vector<datatype> {size , value}
 e.g. vector<int> {5 , 100} // -> This will create a vector of size 5 filled with value 100 -> {100, 100, 100, 100, 100} <br />
+
+e.g. vector<int> {5} // This will create a vector of size 5 field with either 0 or garbage values depending on the compiler
 ``` 
+
+
  
 
 
