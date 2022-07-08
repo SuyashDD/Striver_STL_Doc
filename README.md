@@ -111,7 +111,21 @@ for(auto it = v.begin() ; it != v.end() ; it++)
 for(auto a : v)
     cout << a << " "; // here a is not an address holder instead it will direct give you values in the vector
 ```
+-> Erase a vector
+``` c++
+vector<int> v = {10, 20, 30, 40, 50, 60, 70, 80, 90};
+v.erase(v.begin() + 1); erases 20 located at index 1
 
+vector<int> v = {10, 20, 30, 40, 50, 60, 70, 80, 90};
+
+// v.begin() + 1 points to 20 at index 1
+// v.begin() + 4 points to 50 at index 4
+
+v.erase(v.begin() + 1 , v.begin() + 4 );
+// This will erase elements start index upto element before end index given
+// Means {20, 30, 40} will be deleted.
+// v will be = {10, 50, 60, 70, 80, 90}
+```
 
 
 
