@@ -80,7 +80,23 @@ vector<int> v1(5, 100); // -> {100, 100, 100, 100, 100}
 vector<int> v2(v1) // -> This will create a new vector v2 which will be a copy of vector v1 i.e. v2 = {100, 100, 100, 100, 100}
 ```
 
+ -> One of the other methods to access vector is to use **iterator**
  
+ ``` C++
+ //Format -
+ vector<datatype>::iterator it;
+
+//e.g. -
+vector<int> v = {10, 20, 30, 40, 50};
+
+// v.begin() -> points to 10 i.e. stores the memory address of 10 -> points to the very first element in vector
+// v.end() -> points to the address after 50. Hence if we need to access 50 then we need to do v.end()--;
+
+cout << *(v.end()); // prints either 0 or garbage value
+cout << *(--v.end()); // prints 50
+
+// v.back() -> It is a ==function== which will return the last element of vector i.e. prints 50
+```
 
 
 
