@@ -180,6 +180,45 @@ lst.push_front(9); // {9 , 1 , 2}
 lst.emplace_front(10); // {10 , 9 , 1, 2}
 ```
 
+-> All other functions are exactly similar as Vector 
+``` c++
+// {10,9,1,2}
+cout << *(lst.begin()) << endl; // 10
+cout << *(--lst.end()) << endl; // 2
+
+cout << *(lst.rbegin()) << endl; //2
+cout << *(lst.rend()) << endl; //10
+
+// Swapping
+list<int> new_lst = {5,4,3,2,1};
+cout << "Before Swapping";
+cout << "\nlst" <<endl;
+for(auto i : lst)
+    cout << i << " ";
+cout << "\nnew_lst" <<endl;
+for(auto i : new_lst)
+    cout << i << " ";
+
+lst.swap(new_lst);
+cout << "\nAfter Swapping";
+cout << "\nlst" <<endl;
+for(auto i : lst)
+    cout << i << " ";
+cout << "\nnew_lst" <<endl;
+for(auto i : new_lst)
+    cout << i << " ";
+// Output : 
+//Before Swapping
+//lst
+//10 9 1 2 
+//new_lst
+//5 4 3 2 1 
+//After Swapping
+//lst
+//5 4 3 2 1 
+//new_lst
+//10 9 1 2 
+```
 
 
 
