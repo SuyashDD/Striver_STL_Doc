@@ -163,7 +163,10 @@ v1 = {4 , 5};
 v2 = {1, 2};
 ```
 
+## **LIST**
 
+-> Exactly similar as vector \br
+-> The main difference is that you can perform operations from the front side also.
 
 
 
