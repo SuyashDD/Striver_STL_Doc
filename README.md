@@ -220,10 +220,27 @@ for(auto i : new_lst)
 //10 9 1 2 
 ```
 
+## **DEQUE**
 
+-> similar as vector and list (operations are also same)
+``` c++
+ deque<int> dq = {1,2,3,4,5};
+ dq.push_back(11); // {1,2,3,4,5,11}
+ dq.emplace_back(22); // {1,2,3,4,5,11,22}
+ dq.push_front(33); // {33,1,2,3,4,5,11,22}
+ dq.emplace_front(44); // {44 33 1 2 3 4 5 11 22}
+ cout<<endl;
+ dq.pop_back(); // {44 33 1 2 3 4 5 11}
+ dq.pop_front(); // {33 1 2 3 4 5 11}
+ cout<<dq.back(); // 11
+ cout<<dq.front(); // 33
 
-
-
+ // begin end rbegin rend clear insert size swap
+ dq.insert(dq.begin() , 101); //{101 33 1 2 3 4 5 11 }
+ dq.insert(dq.begin() + 2 , 202); // {101 33 202 1 2 3 4 5 11}
+ dq.insert(dq.end(), 303); // {101 33 202 1 2 3 4 5 11 303}
+```
+ -> Other functions are ->  begin(), end(), rbegin(), rend(), clear(), size(), swap()
 
 
 
