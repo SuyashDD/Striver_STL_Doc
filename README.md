@@ -163,11 +163,22 @@ v1 = {4 , 5};
 v2 = {1, 2};
 ```
 
+-> Insert in a vector is a costly operation because a singly linked list is maintained for a vector.
+
 ## **LIST**
 
--> Exactly similar as vector \br
--> The main difference is that you can perform operations from the front side also.
+-> Exactly similar as vector /br
+-> The main difference is that you can perform operations from the front side also. /br
+-> A doubly linked list is maintained for a List hence insertion is less costlier than vector. /br
 
+``` C++
+list<int> lst;
+lst.push_back(1); //{1}
+lst.emplace_back(2); //{1,2}
+
+lst.push_front(9); // {9 , 1 , 2}
+lst.emplace_front(10); // {10 , 9 , 1, 2}
+```
 
 
 
