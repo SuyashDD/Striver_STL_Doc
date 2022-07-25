@@ -165,6 +165,7 @@ v2 = {1, 2};
 
 -> Insert in a vector is a costly operation because a singly linked list is maintained for a vector.
 
+---
 ## **3. LIST**
 
 -> Exactly similar as vector /br
@@ -220,6 +221,7 @@ for(auto i : new_lst)
 //10 9 1 2 
 ```
 
+---
 ## **4. DEQUE**
 
 -> similar as vector and list (operations are also same)
@@ -255,6 +257,7 @@ Deque: Any insertion or deletion of elements other than at the beginning or end 
 List: Inserting and deleting elements does not invalidate pointers, references, and iterators to other elements.
 
 
+---
 ## **5. STACK**
 
 #### Follows - Last In First Out (LIFO)
@@ -294,6 +297,7 @@ List: Inserting and deleting elements does not invalidate pointers, references, 
 
 #### All the operations on the stack follows O(1) time complexity
 
+---
 ## **6. PRIORITY QUEUE**
 
 #### Follows - First In First Out (FIFO) + Largest element always stays at the top
@@ -332,4 +336,14 @@ cout << pq.empty() << endl;
 1. Push - O(Log N)
 2. Pop - O(Log N)
 3. Top - O(1)
+
+
+---
+## **7. SET**
+
+#### Stores all element in sorted order (Sorted is important)
+
+#### Stores only unique elements i.e. No duplicate elements are allowed
+
+#### Inside a Tree is implemented.
 
