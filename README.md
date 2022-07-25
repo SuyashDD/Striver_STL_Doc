@@ -294,3 +294,8 @@ List: Inserting and deleting elements does not invalidate pointers, references, 
 
 #### All the operations on the stack follows O(1) time complexity
 
+## **6. PRIORITY QUEUE**
+
+#### Follows - First In First Out (FIFO) + Largest element always stays at the top
+
+
