@@ -328,5 +328,8 @@ cout << pq.empty() << endl;
  mpq.emplace(10); // {2,5,8,10}
  cout << mpq.top() << endl; // 2
 ```
-
+### Time Complexity for performing operations on Priority Queue
+1. Push - O(Log N)
+2. Pop - O(Log N)
+3. Top - O(1)
 
