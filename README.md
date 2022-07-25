@@ -255,3 +255,18 @@ Deque: Any insertion or deletion of elements other than at the beginning or end 
 List: Inserting and deleting elements does not invalidate pointers, references, and iterators to other elements.
 
 
+## **5. STACK**
+
+Follow First In Last Out (FIFI)
+
+ ``` C++
+ stack<int> st;
+ st.push(1); // {1}
+ st.push(2); // {1 , 2}
+ st.push(3); // // {1,2,3}
+ st.pop(); // {1,2}
+ st.push(5); // {1,2,5}
+ cout<<st.top()<<endl; // 5
+ cout<<st.size()<<endl; // 3
+ cout<<st.empty()<<endl; // 0 i.e. false
+```
