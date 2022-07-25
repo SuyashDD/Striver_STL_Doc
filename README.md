@@ -242,11 +242,16 @@ for(auto i : new_lst)
 ```
  -> Other functions are ->  begin(), end(), rbegin(), rend(), clear(), size(), swap()
 
-Deque manages its elements with a dynamic array, provides random access, and has almost the same interface as a vector. \br
-List manages its elements as a doubly linked list and does not provide random access. /br
-Deque provides Fast insertions and deletions at both the end and the beginning. Inserting and deleting elements in the middle is relatively slow because all elements up to either of both ends may be moved to make room or to fill a gap. /br
-In List, inserting and removing elements is fast at each position, including both ends. /br
-Deque: Any insertion or deletion of elements other than at the beginning or end invalidates all pointers, references, and iterators that refer to elements of the deque. /br
+Deque manages its elements with a dynamic array, provides random access, and has almost the same interface as a vector.
+
+List manages its elements as a doubly linked list and does not provide random access.
+
+Deque provides Fast insertions and deletions at both the end and the beginning. Inserting and deleting elements in the middle is relatively slow because all elements up to either of both ends may be moved to make room or to fill a gap.
+
+In List, inserting and removing elements is fast at each position, including both ends.
+
+Deque: Any insertion or deletion of elements other than at the beginning or end invalidates all pointers, references, and iterators that refer to elements of the deque.
+
 List: Inserting and deleting elements does not invalidate pointers, references, and iterators to other elements.
 
 
