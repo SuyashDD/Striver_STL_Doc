@@ -298,4 +298,35 @@ List: Inserting and deleting elements does not invalidate pointers, references, 
 
 #### Follows - First In First Out (FIFO) + Largest element always stays at the top
 
+#### If datatype is string then lexicographically string will stay at the top
+
+#### Internally a tree is implemented i.e. A Max Heap is implemented
+
+``` C++
+priority_queue<int> pq;
+pq.push(5); //{5}
+pq.push(2); // {5,2}
+pq.push(8); // {8,5,2}
+pq.emplace(10); // {10,8,5,2}
+
+cout << pq.top() << endl; // 10
+
+pq.pop(); // pops 10
+
+cout << pq.top() << endl; // 8
+cout << pq.empty() << endl;
+// swap in similar way
+```
+
+### Min Priority Queue - A Min Heap Tree is maintained internally - Where smallest element stays at the top
+
+``` C++
+ priority_queue<int, vector<int>, greater<int>> mpq;
+ mpq.push(5); //{5}
+ mpq.push(2); // {2,5}
+ mpq.push(8); // {2,5,8}
+ mpq.emplace(10); // {2,5,8,10}
+ cout << mpq.top() << endl; // 2
+```
+
 
