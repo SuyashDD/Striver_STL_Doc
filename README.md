@@ -257,7 +257,7 @@ List: Inserting and deleting elements does not invalidate pointers, references, 
 
 ## **5. STACK**
 
-Follow Last In First Out (LIFO)
+#### Follows - Last In First Out (LIFO)
 
  ``` C++
  stack<int> st;
@@ -271,5 +271,26 @@ Follow Last In First Out (LIFO)
  cout<<st.empty()<<endl; // 0 i.e. false
  st.clear(); // clears stack
 ```
+#### All the operations on the stack follows O(1) time complexity
+
+## **5. QUEUE**
+
+#### Follows - First In First Out (FIFO)
+
+``` C++
+   queue<int> q;
+   q.push(1); //{1}
+   q.push(2); // {1,2}
+   q.emplace(4); // {1,2,4}
+   q.back() += 5 ; // {1,2,9}
+   cout << q.back() << endl; // 9
+   q.pop(); // pops 9
+   cout << q.front() << endl; // 2
+   cout << q.empty() << endl;
+   q.clear(); // throws error -> for clearing take an empty queue and swap 
+   cout << q.empty() << endl;
+   // swap() also behaves the same
+```
 
 #### All the operations on the stack follows O(1) time complexity
+
