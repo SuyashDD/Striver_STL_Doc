@@ -271,3 +271,5 @@ Follow Last In First Out (LIFO)
  cout<<st.empty()<<endl; // 0 i.e. false
  st.clear(); // clears stack
 ```
+
+#### All the operations on the stack follows O(1) time complexity
