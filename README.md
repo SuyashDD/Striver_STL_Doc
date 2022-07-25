@@ -257,7 +257,7 @@ List: Inserting and deleting elements does not invalidate pointers, references, 
 
 ## **5. STACK**
 
-Follow First In Last Out (FIFI)
+Follow Last In First Out (LIFO)
 
  ``` C++
  stack<int> st;
@@ -269,4 +269,5 @@ Follow First In Last Out (FIFI)
  cout<<st.top()<<endl; // 5
  cout<<st.size()<<endl; // 3
  cout<<st.empty()<<endl; // 0 i.e. false
+ st.clear(); // clears stack
 ```
