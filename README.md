@@ -5,7 +5,7 @@ C++ STL is divided in 4 parts -
 4. Iterators
 
 ---
-## **PAIR**
+## **1. PAIR**
 
 -> Pair resides in unitily library <br />
 -> You can declare pair of any datatype <br />
@@ -33,7 +33,7 @@ pair<char , char> arr[] = { {'a' , 'b'} , {'p' , 'q'} , {'s' , 'w'}};
 cout << arr[1].second; // prints 'q'
 ```
 ---
-## **VECTOR**
+## **2. VECTOR**
 
 -> Dynamic array i.e. size is flexible
 
@@ -165,7 +165,7 @@ v2 = {1, 2};
 
 -> Insert in a vector is a costly operation because a singly linked list is maintained for a vector.
 
-## **LIST**
+## **3. LIST**
 
 -> Exactly similar as vector /br
 -> The main difference is that you can perform operations from the front side also. /br
@@ -220,7 +220,7 @@ for(auto i : new_lst)
 //10 9 1 2 
 ```
 
-## **DEQUE**
+## **4. DEQUE**
 
 -> similar as vector and list (operations are also same)
 ``` c++
